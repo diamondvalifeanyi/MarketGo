@@ -2,18 +2,18 @@ const mongoose = require ("mongoose");
 
 const adminSchema = mongoose.Schema ({
     userName: {
-        type: "string",
+        type: String,
     },
     email: {
-        type: "string",
+        type: String,
         required: true
     },
     password: {
-        type: "string",
+        type: String,
         required: true
     },
     token: {
-        type: "string"
+        type: String
     },
     isLogin: {
         type: Boolean,
